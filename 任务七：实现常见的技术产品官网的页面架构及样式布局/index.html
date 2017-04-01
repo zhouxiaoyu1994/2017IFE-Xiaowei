@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务七：实现常见的技术产品官网的页面架构及样式布局</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="main">
+    <div class="public-header">
+        <div class="header-logo clearFloat">
+            <a href="#">
+                <img src="./images/logo.png" alt="logo" class="header-logoPic">
+                <h1 class="header-logoTxt clearFloat">新世界</h1>
+            </a>
+        </div>
+        <ul class="header-nav clearFloat">
+            <li class="header-item clearFloat header-line1"><a href="#" >首页</a></li>
+            <li class="header-item clearFloat header-line2"><a href="#">最新活动</a></li>
+            <li class="header-item clearFloat header-line3"><a href="#">项目介绍</a></li>
+            <li class="header-item clearFloat header-line4"><a href="#">爱心社区</a></li>
+            <li class="header-item clearFloat header-line5"><a href="#">关于我们</a></li>
+            <li class="header-item clearFloat header-line6"><img src="./images/login.png" alt="login" class="header-loginIco"><a href="#">登录</a></li>
+            <li class="header-item-move"></li>
+        </ul>
+    </div>
+    <div class="index-banner">
+        <div class="index-banner-text">
+            <h1 class="banner-text-tit1">Time of new life</h1>
+            <h3 class="banner-text-tit2">新时代，年轻的人们让我们一起 <br>
+                体验新生活，享受新生活</h3>
+            <div class="banner-text-btn"><a href="#">开始体验</a></div>
+        </div>
+    </div>
+    <div class="index-introduce">
+        <ul class="clearFloat">
+            <li class="clearFloat introduce-item">
+                <img src="./images/introduce01.png" alt="icon">
+                <p class="introduce-text">打造全新世界观，让你更爱你的生活</p>
+            </li>
+            <li class="clearFloat introduce-item">
+                <img src="./images/introduce02.png" alt="icon">
+                <p class="introduce-text">丰富多彩的公益活动，发挥新世界的主人公意识</p>
+            </li>
+            <li class="clearFloat introduce-item">
+                <img src="./images/introduce03.png" alt="icon">
+                <p class="introduce-text">时尚的新理念，超前体验未知的生活</p>
+            </li>
+            <li class="clearFloat introduce-item">
+                <img src="./images/introduce04.png" alt="icon">
+                <p class="introduce-text clearBorder">完善的培训机制，培养你全新的世界观</p>
+            </li>
+        </ul>
+    </div>
+    <div class="index-theme">
+        <img src="./images/thems.png" alt="icon">
+        <h2 class="theme-tit">关于新世界，你不知道的还有什么？</h2>
+    </div>
+    <div class="index-search">
+        <div class="search-shade">
+            <h3>查找新世界城市活动信息</h3>
+            <hr class="search-hr">
+            <p class="search-text">每个城市有不同的活动信息，请自主查询您所需要了解的城市</p>
+            <form action="">
+                <select name="country" class="search-box clearFocus" id="demo-basic">
+                    <option  value="" disabled selected>国家</option>
+                    <option value="China">中国</option>
+                    <option value="American">美国</option>
+                    <option value="England">英国</option>
+                    <option value="Japan">日本</option>
+                    <option value="Canada">加拿大</option>
+                </select>
+                <select name="province" class="search-box clearFocus">
+                    <option  value="" disabled selected>省份</option>
+                    <option value="jiangshu">江苏省</option>
+                    <option value="zhejiang">浙江省</option>
+                    <option value="henan">河南省</option>
+                    <option value="shanxi">陕西省</option>
+                    <option value="beijing">北京市</option>
+                </select>
+                <select name="city" class="search-box clearFocus">
+                    <option  value="" disabled selected>城市</option>
+                    <option value="nanjing" >南京市</option>
+                    <option value="hangzhou">杭州市</option>
+                    <option value="nanyang">南阳市</option>
+                    <option value="shanghai">上海市</option>
+                    <option value="taizhou">泰州市</option>
+                </select>
+                <button class="search-btn clearFocus">搜&nbsp;&nbsp;&nbsp;&nbsp;索</button>
+            </form>
+        </div>
+    </div>
+    <div class="index-activity">
+        <ul>
+            <li class="activity-list clearFloat" >
+                <img src="./images/beijing.png" alt="beijing" class="activity-img">
+                <h3 class="activity-tit">北京活动</h3>
+                <p class="activity-text">新社区大联盟</p>
+            </li>
+            <li class="activity-list clearFloat">
+                <img src="./images/shanghai.png" alt="shanghai" class="activity-img">
+                <h3 class="activity-tit">上海活动</h3>
+                <p class="activity-text">夜上海新景观探索</p>
+            </li>
+            <li class="activity-list clearFloat">
+                <img src="./images/shenzhen.png" alt="shenzhen" class="activity-img">
+                <h3 class="activity-tit">深圳活动</h3>
+                <p class="activity-text">全新海岸线观点站</p>
+            </li>
+            <li class="activity-list clearFloat">
+                <img src="./images/hongkong.png" alt="hongkong" class="activity-img">
+                <h3 class="activity-tit">香港活动</h3>
+                <p class="activity-text">奢侈消费大派送</p>
+            </li>
+        </ul>
+    </div>
+    <div class="index-slide">
+        <div class="slide-pic clearFloat">
+            <h3 class="slide-pic-tit1">新世界</h3>
+            <h2 class="slide-pic-tit2">TIME</h2>
+            <p class="slide-pic-text">@新世界-北京</p>
+            <p class="slide-pic-data">2016.04.01</p>
+            <span class="slide-pic-triangle"></span>
+        </div>
+        <div class="slide-info clearFloat">
+            <div class="slide-info-content">
+                <h3 class="slide-info-tit">新世界<i class="slide-info-i">/</i><span class="slide-info-em">01</span></h3>
+                <p class="slide-info-text">新世界新世界新世界新世新世界新新世界界新世界新世界新世界新世界新世界新世界新世界新世世界新世界新世界新世界新世界新世界新世界新世界新世界新世界新世界</p>
+                <button class="slide-info-more clearFocus">更多详情</button>
+                <br>
+                <button class="slide-info-switch clearFocus"></button>
+                <button class="slide-info-switch clearFocus"></button>
+                <button class="slide-info-switch clearFocus"></button>
+            </div>
+        </div>
+    </div>
+    <div class="index-show">
+        <div class="show-info  clearFloat">
+            <div class="show-info-content">
+                <h3 class="show-info-tit">新时代 <br> 关于爱生活的我们</h3>
+                <hr class="search-hr">
+                <button class="show-info-btn1 clearFocus">查看更多</button>
+            </div>
+        </div>
+        <div class="show-info  clearFloat show-info-bgColor">
+            <div class="show-info-content">
+                <h3 class="show-info-tit">新时代 <br>关于爱生活的我们</h3>
+                <hr class="search-hr search-hr-grayColor">
+                <button class="show-info-btn2 clearFocus">查看更多</button>
+            </div>
+        </div>
+        <div class="show-pic clearFloat">
+            <span class="show-pic-triangle"></span>
+        </div>
+    </div>
+    <div class="index-apply">
+        <h3 class="index-apply-hd3">成为我们的志愿者</h3>
+        <hr class="search-hr search-hr-redColor">
+        <p class="index-apply-text">新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情 <br>
+            那就不要犹豫，快来加入我们，成为改变所有人生活的人</p>
+        <div class="apply-container">
+            <ul class="apply-container-list clearFloat">
+                <li class="container-list-item">
+                    <h4 class="container-list-tit">新世界志愿者协议</h4>
+                    <p class="container-list-text">加入新世界志愿者的人员必须遵循中华人民共和国的相关法律法规，并且本着平等资源的原则.....</p>
+                    <a href="#" class="container-list-showMore">more</a>
+                </li>
+                <li class="container-list-item">
+                    <h4 class="container-list-tit">新世界志愿者权利</h4>
+                    <p class="container-list-text">新世界志愿者享受新世界内部所有资源共享的权利，并 且享受所在四新世界活动的优先参与资格</p>
+                    <a href="#" class="container-list-showMore">more</a>
+                </li>
+                <li class="container-list-item">
+                    <h4 class="container-list-tit">更多条款</h4>
+                    <p class="container-list-text"></p>
+                    <a href="#" class="container-list-showMore">more</a>
+                </li>
+            </ul>
+            <form class="apply-container-frm clearFloat">
+                <input type="text" name="name" placeholder="姓名：" class="container-frm-user clearFocus">
+                <input type="text" name="age" placeholder="年龄：" class="container-frm-user clearFocus">
+                <input type="text" name="tel" placeholder="联系方式：" class="container-frm-user clearFocus">
+                <input type="text" name="address" placeholder="联系地址：" class="container-frm-user clearFocus">
+                <textarea name="" id=""  placeholder="请简单描述您梦想的生活：" class="container-frm-about clearFocus"></textarea>
+                <br>
+                <button class="container-frm-btn clearFocus">提交申请</button>
+            </form>
+        </div>
+    </div>
+    <div class="index-contact">
+        <h3 class="index-contact-tit">联系我们</h3>
+        <p class="index-contact-text">为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯 <br>
+            也可以通过以下任何方式关注我们的动态</p>
+        <input type="text" placeholder="rellyooo@outlook.com" class="index-contact-email clearFocus">
+        <button class="index-contact-btn clearFocus">提 &nbsp;交</button>
+        <ul>
+            <li class="index-contact-icon clearFloat"><a href="#"> <img src="./images/icon-qq.png" alt="qq"></a></li>
+            <li class="index-contact-icon clearFloat"><a href="#"> <img src="./images/icon-weibo.png" alt="weibo"></a></li>
+            <li class="index-contact-icon clearFloat"><a href="#"> <img src="./images/icon-twitter.png" alt="twitter"></a></li>
+            <li class="index-contact-icon clearFloat"><a href="#"> <img src="./images/icon-Internet.png" alt="internet"></a></li>
+        </ul>
+    </div>
+    <div class="public-footer">
+        <p class="public-footer-cc clearFloat">@2016新世界</p>
+        <p class="public-footer-reTop clearFloat"><a href="#">Back to top</a></p>
+    </div>
+</div>
+</body>
+</html>
