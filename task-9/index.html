@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>任务九：使用HTML/CSS实现一个复杂页面</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="hd-logo">
+            <img src="./images/hd-logo.png" alt="logo" class="hd-logo-pic">
+        </div>
+        <div class="hd-nav">
+            <div class="hd-search lineBlock">
+                <img src="./images/hd-search-ico.png" alt="ico" class="hd-search-ico">
+                <input type="text" class="hd-search-text">
+            </div>
+            <div class="hd-login lineBlock">
+                <img src="./images/hd-login-ico.png" alt="ico" class="hd-login-ico">
+                <a href="#"><span class="hd-login-text">登录</span></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--侧边栏-->
+        <div class="main-sidebar lineBlock">
+            <!--用户头像-->
+            <div class="main-sidebar-avatar">
+                <img src="./images/sidebar-zhouxiaoyu.jpg" alt="avatar" class="sidebar-avatar-pic">
+                <span class="sidebar-avatar-text">周小瑜</span>
+            </div>
+            <!--用户信息-->
+            <div class="main-sidebar-container">
+                <div class="main-sidebar-info lineBlock">
+                    <p class="sidebar-info-value"><a href="#" class="sidebar-list-text ">110</a></p>
+                    <p class="sidebar-info-sum"><a href="#" class="sidebar-list-text ">收藏</a></p>
+                </div>
+                <div class="main-sidebar-info lineBlock clearBorder">
+                    <p class="sidebar-info-value"><a href="#" class="sidebar-list-text">313</a></p>
+                    <p class="sidebar-info-sum"><a href="#" class="sidebar-list-text">粉丝</a></p>
+                </div>
+            </div>
+            <!--树状列表-->
+            <ul class="main-sidebar-list">
+                <li class="sidebar-list-table bgClick">
+                    <input type="checkbox" id="trigger-layout0">
+                    <a href="#" class="sidebar-list-text"><label for="trigger-layout0">个人报表</label></a>
+                    <img src="./images/sidebar-table.png" alt="ico" class="sidebar-list-icon">
+                    <ol class="sidebar-list-fold">
+                        <input type="checkbox" id="trigger-layout1">
+                        <a href="#" class="sidebar-list-text "><label for="trigger-layout1">文件一</label></a>
+                        <i class="bgArrow"></i>
+                        <img src="./images/sidebar-folder.png" alt="ico" class="sidebar-list-icon">
+                        <li>
+                            <a href="#" class="sidebar-list-text ">文档一</a>
+                            <img src="./images/sidebar-document.png" alt="ico" class="sidebar-list-icon">
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar-list-text ">文档二</a>
+                            <img src="./images/sidebar-document.png" alt="ico" class="sidebar-list-icon">
+                        </li>
+                    </ol>
+                    <ol class="sidebar-list-fold">
+                        <input type="checkbox" id="trigger-layout2">
+                        <a href="#" class="sidebar-list-text "> <label for="trigger-layout2">文件二</label></a>
+                        <i src="" alt="" class="bgArrow"></i>
+                        <img src="./images/sidebar-folder.png" alt="ico" class="sidebar-list-icon">
+                        <li>
+                            <a href="#" class="sidebar-list-text ">文档一</a>
+                            <img src="./images/sidebar-document.png" alt="ico" class="sidebar-list-icon">
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar-list-text ">文档二</a>
+                            <img src="./images/sidebar-document.png" alt="ico" class="sidebar-list-icon">
+                        </li>
+                    </ol>
+                    <ol class="sidebar-list-fold">
+                        <input type="checkbox" id="trigger-layout3">
+                        <a href="#" class="sidebar-list-text "> <label for="trigger-layout3">文件三</label></a>
+                        <i src="" alt="" class="bgArrow"></i>
+                        <img src="./images/sidebar-folder.png" alt="ico" class="sidebar-list-icon">
+                        <li>
+                            <a href="#" class="sidebar-list-text ">文档一</a>
+                            <img src="./images/sidebar-document.png" alt="ico" class="sidebar-list-icon">
+                        </li>
+                        <li>
+                            <a href="#" class="sidebar-list-text ">文档二</a>
+                            <img src="./images/sidebar-document.png" alt="ico" class="sidebar-list-icon">
+                        </li>
+                    </ol>
+                </li>
+                <li class="sidebar-list-table">
+                    <a href="#" class="sidebar-list-text">个人收藏</a>
+                    <img src="./images/sidebar-collect.png" alt="ico" class="sidebar-list-icon">
+                </li>
+                <li class="sidebar-list-table">
+                    <a href="#" class="sidebar-list-text">我的分享</a>
+                    <img src="./images/sidebar-sharing.png" alt="ico" class="sidebar-list-icon">
+                </li>
+                <li class="sidebar-list-table">
+                    <a href="#" class="sidebar-list-text">图库</a>
+                    <img src="./images/sidebar-collect.png" alt="ico" class="sidebar-list-icon">
+                </li>
+                <li class="sidebar-list-table">
+                    <a href="#" class="sidebar-list-text">成长记录</a>
+                    <img src="./images/sidebar-collect.png" alt="ico" class="sidebar-list-icon">
+                </li>
+                <li class="sidebar-list-table">
+                    <a href="#" class="sidebar-list-text">账户信息</a>
+                    <img src="./images/sidebar-account.png" alt="ico" class="sidebar-list-icon">
+                </li>
+            </ul>
+        </div>
+        <!--主要内容-->
+        <div class="main-content lineBlock">
+            <div class="main-content-tab">
+                <!--标签页-->
+                    <input type="radio" id="tab1" name="tab" class="content-tab-text" >
+                    <label for="tab1" class="content-tabBox">C站<span>/</span></label>
+                    <input type="radio" id="tab2" name="tab" class="content-tab-text">
+                    <label for="tab2" class="content-tabBox">个人报表<span>/</span></label>
+                    <input type="radio" id="tab3" name="tab" class="content-tab-text">
+                    <label for="tab3" class="content-tabBox">文件一<span>/</span></label>
+                    <input type="radio" id="tab4" name="tab" checked class="content-tab-text">
+                    <label for="tab4" class="content-tabBox">文档一</label>
+                <div class="tab">C站C站C站C站C站C站C站C站C站C站C站C站C站C站站C站C站C站C站C站C站C站C站C站C站C站C站C站C站C站C站C站C站站C站C站C站C站</div>
+                <div class="tab">个人报表个人报表个人报表个人报表个人报表个人报表个人个人报表个人报表个人个人报表个表个人个人报表个表个人报表个人报表个报表个人报表</div>
+                <div class="tab">文件一文件一文件一文件一文件一文件一文件一文件件一文件一文件一文件一文件一文件一文件件一文件一文件一文件一文件一文件一文件一文件一文件一文件一</div>
+                <!--文档一内容-->
+                <div class="tab main-content-container">
+                    <!--项目一 查询搜索-->
+                    <div class="content-pro1">
+                        <form>
+                            <div class="pro1-inquire lineBlock">
+                                <span>查询项</span>
+                                <select name="inquire" class="pro1-shortBox">
+                                    <option value="" class="aaa">第一项</option>
+                                    <option value="">第二项</option>
+                                    <option value="">第三项</option>
+                                </select>
+                            </div>
+                            <div class="pro1-exchange lineBlock">
+                                <span>买方</span>
+                                <select name="buyer" class="pro1-longBox">
+                                    <option value="">小A</option>
+                                    <option value="">小B</option>
+                                    <option value="">小C</option>
+                                </select>
+                                <br>
+                                <span>卖方</span>
+                                <select name="seller" class="pro1-longBox">
+                                    <option value="">小A</option>
+                                    <option value="">小B</option>
+                                    <option value="">小C</option>
+                                </select>
+                                <button class="pro1-exchange-btn">&nbsp;&nbsp;换</button>
+                            </div>
+                            <div class="pro1-data lineBlock">
+                                <span>日期</span>
+                                <input type="text" class="pro1-data-text" value="2017-4-7">
+                                <span>总耗时</span>
+                                <select name="time" class="pro1-shortBox">
+                                    <option value="">1天</option>
+                                    <option value="">3天</option>
+                                    <option value="">5天</option>
+                                </select>
+                                <br>
+                                <span>人数</span>
+                                <select name="people" class="pro1-shortBox">
+                                    <option value="">1人</option>
+                                    <option value="">15人</option>
+                                    <option value="">25人</option>
+                                </select>
+                                <span>成交项</span>
+                                <select name="article" class="pro1-longBox">
+                                    <option value="">1项</option>
+                                    <option value="">15项</option>
+                                    <option value="">25项</option>
+                                </select>
+                            </div>
+                            <button class="pro1-search-btn">搜索</button>
+                        </form>
+                    </div>
+                    <!--项目二 历史查询-->
+                    <div class="content-pro2">
+                        <div class="pro2-leftArrow lineBlock"></div>
+                        <div class="pro2-box lineBlock">
+                            <p>10:00 am</p>
+                            <p>
+                                <span class="pro2-box-span1">￥</span>
+                                <span class="pro2-box-span2">1200</span>
+                            </p>
+                        </div>
+                        <div class="pro2-box lineBlock">
+                            <p>10:00 am</p>
+                            <p>
+                                <span class="pro2-box-span1">￥</span>
+                                <span class="pro2-box-span2">1200</span>
+                            </p>
+                        </div>
+                        <div class="pro2-box lineBlock">
+                            <p>10:00 am</p>
+                            <p>
+                                <span class="pro2-box-span1">￥</span>
+                                <span class="pro2-box-span2">1200</span>
+                            </p>
+                        </div>
+                        <div class="pro2-box lineBlock">
+                            <p>10:00 am</p>
+                            <p>
+                                <span class="pro2-box-span1">￥</span>
+                                <span class="pro2-box-span2">1200</span>
+                            </p>
+                        </div>
+                        <div class="pro2-box lineBlock">
+                            <p>10:00 am</p>
+                            <p>
+                                <span class="pro2-box-span1">￥</span>
+                                <span class="pro2-box-span2">1200</span>
+                            </p>
+                        </div>
+                        <div class="pro2-box lineBlock">
+                            <p>10:00 am</p>
+                            <p>
+                                <span class="pro2-box-span1">￥</span>
+                                <span class="pro2-box-span2">1200</span>
+                            </p>
+                        </div>
+                        <div class="pro2-rightArrow lineBlock"></div>
+                        <div class="pro2-history lineBlock">
+                            <span class="pro2-history-pic"></span>
+                            <a href="#">历史查询</a>
+                        </div>
+                    </div>
+                    <!--项目三 统计-->
+                    <div class="content-pro3">
+                        <h3 class="pro3-tit">2016年4月份统计</h3>
+                        <div class="pro3-box1 lineBlock">
+                            <p class="pro3-box-value">133311</p>
+                            <p class="pro3-box-name">成交量</p>
+                            <div class="pro3-box1-color"></div>
+                        </div>
+                        <div class="pro3-box2 lineBlock">
+                            <p class="pro3-box-value">133311</p>
+                            <p class="pro3-box-name">成交量</p>
+                            <div class="pro3-box2-color"></div>
+                        </div>
+                        <div class="pro3-box3 lineBlock">
+                            <p class="pro3-box-value">133311</p>
+                            <p class="pro3-box-name">成交量</p>
+                            <div class="pro3-box3-color"></div>
+                        </div>
+                        <div class="pro3-box4 lineBlock">
+                            <p class="pro3-box-value">133311</p>
+                            <p class="pro3-box-name">成交量</p>
+                            <div class="pro3-box4-color"></div>
+                        </div>
+                    </div>
+                    <!--项目四 材料-->
+                    <div class="content-pro4 longPro lineBlock">
+                        <h2 class="pro-longHd">第四组项目</h2>
+                        <div class="pro4-Content">
+                            <input type="radio" id="pro4-tab1"  name="pro4-tab" checked class="pro4-tab-text" >
+                            <label for="pro4-tab1" class="pro4-tab-box">项目一</label>
+                            <input type="radio" id="pro4-tab2"  name="pro4-tab" class="pro4-tab-text">
+                            <label for="pro4-tab2" class="pro4-tab-box">项目二</label>
+                            <input type="radio" id="pro4-tab3"  name="pro4-tab" class="pro4-tab-text">
+                            <label for="pro4-tab3" class="pro4-tab-box">项目三</label>
+                            <input type="radio" id="pro4-tab4"  name="pro4-tab" class="pro4-tab-text">
+                            <label for="pro4-tab4" class="pro4-tab-box">项目四</label>
+                            <input type="radio" id="pro4-tab5"  name="pro4-tab" class="pro4-tab-text">
+                            <label for="pro4-tab5" class="pro4-tab-box">项目五</label>
+                            <div class="pro4-tab pro4-tableBox ">
+                                <table class="pro4-table">
+                                    <tr>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                    </tr>
+                                    <tr>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                        <td>购买材料一</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="pro4-tab">
+                               周小瑜周小瑜周小瑜周小瑜周小瑜周小瑜周小瑜周小瑜周小瑜周小瑜
+                            </div>
+                            <div class="pro4-tab">
+                                吖吖 吖吖 吖吖 吖吖 吖吖 吖吖 吖吖 吖吖 吖吖 吖吖
+                            </div>
+                            <div class="pro4-tab">
+                                时代时代时代时代时代时代时代时代时代时代时代时代时代
+                            </div>
+                            <div class="pro4-tab">
+                                圣诞节圣诞节圣诞节圣诞节圣诞节圣诞节圣诞节圣诞节圣诞节
+                            </div>
+                            <div class="pro4-tab">
+                                山东省山东省山东省山东省山东省山东省山东省山东省山东省山东省
+                            </div>
+                        </div>
+                    </div>
+                    <!--项目五 报表-->
+                    <div class="shortPro lineBlock">
+                        <h2 class="pro-shortHd">第五组项目</h2>
+                        <form class="pro5-Content">
+                            <div class="pro5-Content-tit">
+                                <label for="pro5-tit" >标题</label>
+                                <input type="text" id="pro5-tit" value="项目报表三" class="block pro5-Content-text">
+                            </div>
+                            <div class="lineBlock pro5-Content-price">
+                                <label for="pro5-price">价格</label>
+                                <input type="text" id="pro5-price" value="151" class="block pro5-Content-text">
+                            </div>
+                            <div class="lineBlock pro5-Content-leader">
+                                <label for="pro5-leader">负责人</label>
+                                <input type="text" id="pro5-leader" value="小A" class="block pro5-Content-text">
+                            </div>
+                            <div class="pro5-Content-particular">
+                                <label for="pro5-particular">详细描述</label>
+                                <textarea name="" id="pro5-particular" placeholder="该项目目前负责人是......" class="block pro5-Content-tea"></textarea>
+                            </div>
+                            <div class="pro5-Content-talk">
+                                <label for="pro5-talk" class="pro5-Content-lab">
+                                    <input type="checkbox" id="pro5-talk" class="pro5-Content-checkbox" checked>
+                                    <span class="pro5-Content-box"></span>
+                                    遵守保密协议
+                                </label>
+                                <button class="pro5-Content-btn">搜索</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!--项目六 日历-->
+                    <div class=" shortPro lineBlock">
+                        <h2 class="pro-shortHd">日历</h2>
+                        <div class="pro6-Content">
+                            <div class="pro6-select">
+                                <div class="pro6-selectBox lineBlock">
+                                    <select name="year"  class="pro6-selectBox-select">
+                                        <option value="">2017年</option>
+                                        <option value="">2016年</option>
+                                        <option value="">2015年</option>
+                                    </select>
+                                    <span class="pro6-selectBox-arrow"></span>
+                                </div>
+                                <div class="pro6-selectBox lineBlock">
+                                    <select name="month" class="pro6-selectBox-select">
+                                        <option value="">7月</option>
+                                        <option value="">6月</option>
+                                        <option value="">5月</option>
+                                    </select>
+                                    <span class="pro6-selectBox-arrow"></span>
+                                </div>
+                                <div class="pro6-selectBox lineBlock">
+                                    <select name="data" class="pro6-selectBox-select">
+                                        <option value="">标注日期</option>
+                                    </select>
+                                    <span class="pro6-selectBox-arrow"></span>
+                                </div>
+                                <button class="pro6-btn">返回今天</button>
+                            </div>
+                            <table class="pro6-calendar">
+                                <tr class="pro6-calendar-hd">
+                                    <th>一</th>
+                                    <th>二</th>
+                                    <th>三</th>
+                                    <th>四</th>
+                                    <th>五</th>
+                                    <th>六</th>
+                                    <th>日</th>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <p>1</p>
+                                        <p class="pro6-vacation">愚人节</p>
+                                    </td>
+                                    <td>
+                                        <p>2</p>
+                                        <p>廿五</p>
+                                    </td>
+                                    <td>
+                                        <p>3</p>
+                                        <p>廿六</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>4</p>
+                                        <p>廿七</p>
+                                    </td>
+                                    <td>
+                                        <p>5</p>
+                                        <p class="pro6-vacation">清明</p>
+                                    </td>
+                                    <td>
+                                        <p>6</p>
+                                        <p>廿九</p>
+                                    </td>
+                                    <td>
+                                        <p>7</p>
+                                        <p>三月</p>
+                                    </td>
+                                    <td>
+                                        <p>8</p>
+                                        <p>初二</p>
+                                    </td>
+                                    <td class="pro6-active">
+                                        <p>9</p>
+                                        <p>初三</p>
+                                    </td>
+                                    <td>
+                                        <p>10</p>
+                                        <p>初四</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>11</p>
+                                        <p>初五</p>
+                                    </td>
+                                    <td class="pro6-active">
+                                        <p>12</p>
+                                        <p>初六</p>
+                                    </td>
+                                    <td>
+                                        <p>13</p>
+                                        <p>初七</p>
+                                    </td>
+                                    <td>
+                                        <p>14</p>
+                                        <p>初八</p>
+                                    </td>
+                                    <td>
+                                        <p>15</p>
+                                        <p>初九</p>
+                                    </td>
+                                    <td>
+                                        <p>16</p>
+                                        <p>初十</p>
+                                    </td>
+                                    <td>
+                                        <p>17</p>
+                                        <p>十一</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>18</p>
+                                        <p>十二</p>
+                                    </td>
+                                    <td class="pro6-active">
+                                        <p>19</p>
+                                        <p>十三</p>
+                                    </td>
+                                    <td>
+                                        <p>20</p>
+                                        <p>十四</p>
+                                    </td>
+                                    <td>
+                                        <p>21</p>
+                                        <p>十五</p>
+                                    </td>
+                                    <td>
+                                        <p>22</p>
+                                        <p>十六</p>
+                                    </td>
+                                    <td>
+                                        <p>23</p>
+                                        <p>十七</p>
+                                    </td>
+                                    <td>
+                                        <p>24</p>
+                                        <p>十八</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>25</p>
+                                        <p>十九</p>
+                                    </td>
+                                    <td>
+                                        <p>26</p>
+                                        <p>廿十</p>
+                                    </td>
+                                    <td>
+                                        <p>27</p>
+                                        <p>廿一</p>
+                                    </td>
+                                    <td>
+                                        <p>28</p>
+                                        <p>廿二</p>
+                                    </td>
+                                    <td>
+                                        <p>29</p>
+                                        <p>廿三</p>
+                                    </td>
+                                    <td>
+                                        <p>30</p>
+                                        <p>廿四</p>
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                    <!--项目七 汽车行业品牌榜-->
+                    <div class="main-content-pro7 longPro lineBlock">
+                        <h2 class="pro-longHd">汽车行业品牌榜</h2>
+                        <table class="pro7-table">
+                            <tr>
+                                <th class="pro7-table-row1">排名</th>
+                                <th class="pro7-table-row2">品牌</th>
+                                <th class="pro7-table-row3">搜索指数</th>
+                            </tr>
+                            <tr class="active">
+                                <td class="pro7-table-row1">1</td>
+                                <td class="pro7-table-row2">大众</td>
+                                <td class="pro7-table-row3">48912001
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-80"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">2</td>
+                                <td class="pro7-table-row2">丰田</td>
+                                <td class="pro7-table-row3">29307333
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-70"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">3</td>
+                                <td class="pro7-table-row2">奥迪</td>
+                                <td class="pro7-table-row3">23139070
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-60"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">4</td>
+                                <td class="pro7-table-row2">本田</td>
+                                <td class="pro7-table-row3">22885564
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-50"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">5</td>
+                                <td class="pro7-table-row2">福特</td>
+                                <td class="pro7-table-row3">22324792
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-40"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">6</td>
+                                <td class="pro7-table-row2">宝马</td>
+                                <td class="pro7-table-row3">21444077
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-30"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">7</td>
+                                <td class="pro7-table-row2">现代</td>
+                                <td class="pro7-table-row3">20114969
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-20"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">8</td>
+                                <td class="pro7-table-row2">起亚</td>
+                                <td class="pro7-table-row3">19251680
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-15"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">9</td>
+                                <td class="pro7-table-row2">奔驰</td>
+                                <td class="pro7-table-row3">19172837
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-10"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="pro7-table-row1">10</td>
+                                <td class="pro7-table-row2">别克</td>
+                                <td class="pro7-table-row3">18544027
+                                    <div class="pro7-table-process">
+                                        <span class="process-bar-5"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
