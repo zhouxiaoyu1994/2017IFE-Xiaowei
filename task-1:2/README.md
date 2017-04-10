@@ -1,5 +1,5 @@
 # 任务一与任务二
-[demo](https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-1/2/index.html)
+[demo](https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-1:2/index.html)
 ## 任务一 ：零基础HTML编码
 ### 任务目的
 - 了解HTML的定义、概念、发展简史
