@@ -25,6 +25,11 @@ body{
     font-size: 12px;
     font-family: Microsoft YaHei, "微软雅黑";
 }
+@media screen and (max-width: 1280px){
+    body{
+        background: #228abf;
+    }
+}
 /*头部*/
 header{
     width: 100%;

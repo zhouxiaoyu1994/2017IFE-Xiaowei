@@ -1,0 +1,51 @@
+*{ margin:0; padding:0; }
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.box{
+    width: 110px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #f00;
+}
+.one{
+    height: 90px;
+    -webkit-order: 1;
+    order: 1;
+}
+.two{
+    height: 70px;
+    -webkit-order: 2;
+    order: 2;
+}
+.three{
+    height: 20px;
+    -webkit-order: 3;
+    order: 3;
+}
+.four{
+    height: 160px;
+    border: 1px solid #0f0;
+    -webkit-order: 4;
+    order: 4;
+}
+
+
+/* 浏览器宽度小于640px */
+@media screen and (max-width: 640px){
+    /*将容器中的弹性项目换行*/
+    .container{
+        flex-wrap: wrap;
+    }
+    .four{
+        /* 将盒子4 在顺序中的位置设为第一 */
+        -webkit-order: 0;
+        order: 0;
+    }
+}
