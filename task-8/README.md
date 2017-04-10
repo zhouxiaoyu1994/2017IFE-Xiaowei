@@ -1,5 +1,5 @@
 # 任务八：响应式网格（栅格化）布局普通
-[Demo:https://zhouxiaoyu1994.github.io/baiduCollegeXiaowei/task-8/index.html](https://zhouxiaoyu1994.github.io/baiduCollegeXiaowei/task-8/index.html)
+[Demo](https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-8/index.html)
 ## 任务目的
 - 使用 HTML 与 CSS 实现类似 BootStrap 的响应式 12 栏网格布局，根据屏幕宽度，元素占的栏数不同。
 ## 任务描述

@@ -1,5 +1,5 @@
 # 任务七：实现常见的技术产品官网的页面架构及样式布局
-[Demo:https://zhouxiaoyu1994.github.io/baiduCollegeXiaowei/task-7/index.html](https://zhouxiaoyu1994.github.io/baiduCollegeXiaowei/task-7/index.html)
+[Demo](https://zhouxiaoyu1994.github.io/2017IFE-Xiaowei/task-7/index.html)
 
 ## 任务目的
 - 通过实现一个常见的技术产品官网，加深对于HTML，CSS的实战能力
