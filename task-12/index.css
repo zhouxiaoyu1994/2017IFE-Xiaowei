@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+a { text-decoration:none; }
+a:hover { text-decoration:none; }
+/*表格*/
+.ranking{
+    width: 300px;
+    margin: 30px auto;
+}
+.ranking th{
+    color: #ffffff;
+    background: #000000;
+}
+.ranking tr:nth-of-type(2),.ranking tr:nth-of-type(3),.ranking tr:nth-of-type(4){
+    color: red;
+}
+.ranking tr:nth-of-type(2n+1){
+    background: #aaaaaa;
+}
+
+/*文本框*/
+.text{
+    margin: 30px auto;
+    width: 100px;
+    height: 100px;
+}
+.text input{
+    width: 100px;
+    height: 20px;
+    border: 2px solid #ddd;
+    transition: all 0.7s;
+}
+.text input:focus{
+    width: 260px;
+    margin-left: -80px;
+    margin-top: 60px;
+}
+
+/*轮播图*/
+.banner{
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    background: #cf3e3d;
+    overflow: hidden;
+}
+.banner input{
+    display: none;
+}
+.banner-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:300%;
+    height:100%;
+    list-style: none;
+    -webkit-animation:slide 6s ease-out infinite;
+}
+.banner-box{
+    width: 400px;
+    height: 200px;
+    float: left;
+    font-size: 60px;
+    line-height: 200px;
+    text-align: center;
+    color: #ffffff;
+}
+.banner-box1{
+    background: #cf3e3d;
+}
+.banner-box2{
+    background: #1c8cff;
+}
+.banner-box3{
+    background: #00a74a;
+}
+/*自动切换*/
+@-webkit-keyframes slide {
+    0% { margin-left:0;}
+    23% { margin-left:0;}
+    33% { margin-left:-400px;}
+    56% { margin-left:-400px;}
+    66% { margin-left:-800px;}
+    90% { margin-left:-800px;}
+    100% {margin-left:0;}
+}
+/*手动切换*/
+#btn1:target ~ .banner-content{
+    transition: left 1s;
+    -webkit-animation:none;
+    left: 0;
+}
+#btn2:target ~ .banner-content {
+    transition: left 1s;
+    -webkit-animation:none;
+    left: -100%;
+}
+#btn3:target ~ .banner-content {
+    transition: left 1s;
+    -webkit-animation:none;
+    left: -200%;
+}
+
+/*按钮*/
+.banner-list{
+    position: absolute;
+    bottom: 2%;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+    list-style: none;
+}
+.banner-list li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.banner-btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    border: 1px solid #aaaaaa;
+    font-size: 20px;
+}
+.banner-btn:hover {
+    background: #aaaaaa;
+}
