@@ -27,4 +27,4 @@
 - [MobileWeb 适配总结](https://www.w3ctech.com/topic/979)
 - [移动前端不得不了解的html5 head 头标签](http://www.css88.com/archives/5480)
 ## 代码说明
-- 本项目中的箭头图标引用自fortawesome
+- 本项目中的箭头图标引用自fortawesome 更新
